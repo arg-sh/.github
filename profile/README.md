@@ -42,7 +42,7 @@ Bash is powerful and widely available, but easy to write in a way that is hard t
 ```bash
 local -a args=(
   'name|n:!'    "Your name"
-  'age|a:int'   "Your age"
+  'age|a:~int'  "Your age"
   'verbose|v:+' "Verbose output"
 )
 :args "Greet someone" "${@}"

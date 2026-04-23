@@ -29,19 +29,15 @@ This repository holds the default files that GitHub applies across all repositor
 
 ### 📁 Contents
 
-| Path | Purpose |
-|---|---|
-| `profile/README.md` | Organization profile displayed on [github.com/arg-sh](https://github.com/arg-sh) |
-| `LICENSE` | Default MIT license for the organization |
+- **`profile/README.md`** — Organization profile displayed on [github.com/arg-sh](https://github.com/arg-sh)
+- **`LICENSE`** — Default MIT license for the organization
 
 &nbsp;
 
 ### 🔗 Repositories
 
-| Repo | Description |
-|---|---|
-| [**argsh**](https://github.com/arg-sh/argsh) | Core framework, builtins, LSP, and tooling |
-| [**libs**](https://github.com/arg-sh/libs) | Community plugin libraries (jaml, ...) |
+- [**argsh**](https://github.com/arg-sh/argsh) — Core framework, builtins, LSP, and tooling
+- [**libs**](https://github.com/arg-sh/libs) — Community plugin libraries (jaml, ...)
 
 &nbsp;
 

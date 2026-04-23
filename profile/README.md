@@ -31,17 +31,13 @@
 
 &nbsp;
 
-Bash is powerful and widely available, but easy to write in a way that is hard to read and maintain. **argsh** provides the building blocks to write Bash code that is structured, tested, and production-ready.
+<p align="left">
+Bash is powerful and widely available, but easy to write in a way that is hard to read and maintain. <b>argsh</b> provides the building blocks to write Bash code that is structured, tested, and production-ready.
+</p>
 
 &nbsp;
 
-### Highlights
-
-<table>
-<tr>
-<td width="50%">
-
-**Zero-boilerplate CLI parsing**
+### 🔧 Zero-boilerplate CLI parsing
 
 ```bash
 local -a args=(
@@ -54,10 +50,9 @@ local -a args=(
 
 Flags, types, defaults, validation, and `--help` — from a plain array.
 
-</td>
-<td width="50%">
+&nbsp;
 
-**Git-style subcommands**
+### 🗂️ Git-style subcommands
 
 ```bash
 local -a usage=(
@@ -69,24 +64,18 @@ local -a usage=(
 
 Convention-based routing with fuzzy typo suggestions.
 
-</td>
-</tr>
-<tr>
-<td>
+&nbsp;
 
-**Up to 1500x faster with Rust builtins**
+### ⚡ Up to 1500x faster with Rust builtins
 
-Optional loadable builtins compiled from Rust run natively inside the Bash process — zero fork overhead.
+Optional loadable builtins compiled from Rust run natively inside the Bash process — zero fork overhead, zero subshell cost.
 
-| Flags | Pure Bash | Builtin | Speedup |
-|------:|----------:|--------:|--------:|
-|    10 |   5405 ms |    4 ms |  1351x  |
-|    50 |  29603 ms |   20 ms |  1480x  |
+- **10 flags** — Pure Bash 5405 ms → Builtin 4 ms (**1351x**)
+- **50 flags** — Pure Bash 29603 ms → Builtin 20 ms (**1480x**)
 
-</td>
-<td>
+&nbsp;
 
-**AI-ready out of the box**
+### 🤖 AI-ready out of the box
 
 ```bash
 ./myscript mcp              # MCP server (stdio)
@@ -96,29 +85,23 @@ Optional loadable builtins compiled from Rust run natively inside the Bash proce
 
 Every argsh script is an MCP server and LLM tool — no glue code.
 
-</td>
-</tr>
-</table>
-
 &nbsp;
 
-### Batteries included
+### 🧰 Batteries included
 
-| Tool | What it does |
-|---|---|
-| `argsh test` | Run `.bats` tests with auto-discovery |
-| `argsh lint` | shellcheck + argsh-specific checks (AG001–AG013) |
-| `argsh coverage` | Coverage reports with minimum threshold |
-| `argsh docs` | Generate Markdown, man, RST, YAML from comments |
-| `argsh minify` | Bundle + minify + obfuscate into a single script |
-| **LSP + Debugger** | Full IDE support — completions, diagnostics, formatting, step-through debugging |
-| **Plugin system** | Install, publish, and manage libraries via OCI registries |
+- **`argsh test`** — Run `.bats` tests with auto-discovery
+- **`argsh lint`** — shellcheck + argsh-specific checks (AG001–AG013)
+- **`argsh coverage`** — Coverage reports with minimum threshold
+- **`argsh docs`** — Generate Markdown, man, RST, YAML from comments
+- **`argsh minify`** — Bundle + minify + obfuscate into a single script
+- **LSP + Debugger** — Full IDE support with completions, diagnostics, formatting, and step-through debugging
+- **Plugin system** — Install, publish, and manage libraries via OCI registries
 
 Everything runs locally when available, transparently forwards to Docker otherwise.
 
 &nbsp;
 
-### Quick install
+### 📦 Install
 
 ```bash
 curl -sL https://min.arg.sh > .bin/argsh && chmod +x .bin/argsh
@@ -132,15 +115,12 @@ bash -c "$(curl -sL https://get.arg.sh)"
 
 &nbsp;
 
-### Repositories
+### 🔗 Repositories
 
-| Repo | Description |
-|---|---|
-| [**argsh**](https://github.com/arg-sh/argsh) | Core framework, builtins, LSP, and tooling |
-| [**libs**](https://github.com/arg-sh/libs) | Community plugin libraries (jaml, ...) |
+- [**argsh**](https://github.com/arg-sh/argsh) — Core framework, builtins, LSP, and tooling
+- [**libs**](https://github.com/arg-sh/libs) — Community plugin libraries (jaml, ...)
 
 &nbsp;
 
-<p align="center">
-  <a href="https://arg.sh">arg.sh</a> · MIT License · Copyright &copy; 2024-present <a href="https://github.com/fentas">Jan Guth</a>
-</p>
+<p align="center">Copyright &copy; 2024-present <a href="https://github.com/fentas" target="_blank">Jan Guth</a>
+<p align="center"><a href="https://github.com/arg-sh/argsh/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=302d41&colorB=b7bdf8"/></a></p>
